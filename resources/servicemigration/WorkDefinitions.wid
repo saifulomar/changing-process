@@ -1,0 +1,33 @@
+import org.drools.process.core.datatype.impl.type.StringDataType;
+[
+  [
+    "name" : "Email",
+    "parameters" : [
+      "From" : new StringDataType(),
+      "To" : new StringDataType(),
+      "Subject" : new StringDataType(),
+      "Body" : new StringDataType()
+    ],
+    "displayName" : "Email",
+    "icon" : "http://localhost:8080/drools-guvnor/rest/packages/InstanceMigration/assets/defaultemailicon/binary"
+  ],
+  
+  [
+    "name" : "Log",
+    "parameters" : [
+      "Message" : new StringDataType()
+    ],
+    "displayName" : "Log",
+    "icon" : "http://localhost:8080/drools-guvnor/rest/packages/InstanceMigration/assets/defaultlogicon/binary"
+  ],
+
+[
+    "name" : "InstanceMigration",
+    "parameters" : [
+      "instanceId" : new StringDataType(),
+      "processId" : new StringDataType(),
+    ],
+    "displayName" : "Instance Migration",
+    "icon" : "http://localhost:8080/drools-guvnor/rest/packages/InstanceMigration/assets/defaultlogicon/binary"
+  ]
+]
